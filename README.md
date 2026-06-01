@@ -36,28 +36,14 @@ cd Safora_Automation
 npm install
 ```
 
-4. Run the tests:
+4. Run tests using Playwright UI mode:
 
 ```bash
-npm test
+npx playwright test --ui
 ```
 
 5. View the HTML report:
 
 ```bash
 npx playwright show-report
-```
-
-## Additional Commands
-
-Run tests with a visible browser:
-
-```bash
-npm run test:headed
-```
-
-Run tests using Playwright UI mode:
-
-```bash
-npx playwright test --ui
 ```
