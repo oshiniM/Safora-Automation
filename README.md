@@ -8,7 +8,7 @@ The tests are written in TypeScript and focus on the Contact Us form validation,
 
 ## How to Run This Project
 
-### Prerequisites
+### Pre requirements
 Before running the tests, make sure the following are installed:
 - Node.js
 - npm
