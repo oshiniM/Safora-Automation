@@ -19,7 +19,7 @@ Before running the tests, make sure the following are installed:
 1. Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/oshiniM/Safora-Automation.git
 ```
 
 2. Go to the project folder:
