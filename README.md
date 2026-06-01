@@ -6,33 +6,10 @@ https://safora.se/en/contact.html
 
 The tests are written in TypeScript and focus on the Contact Us form validation, negative scenarios, phone field behavior, and reCAPTCHA submission behavior.
 
-## Tools Used
-
-- Playwright
-- TypeScript
-- Google Chrome browser
-
-## Project Structure
-
-```text
-Safora_Automation/
-├── pages/
-│   └── ContactUsPage.ts
-├── test-data/
-│   └── contact-us-data.ts
-├── tests/
-│   └── contact-us.spec.ts
-├── playwright.config.ts
-├── package.json
-└── README.md
-```
-
 ## How to Run This Project
 
 ### Prerequisites
-
 Before running the tests, make sure the following are installed:
-
 - Node.js
 - npm
 - Google Chrome browser
@@ -66,10 +43,8 @@ npm test
 5. View the HTML report:
 
 ```bash
-npm run report
+npx playwright show-report
 ```
-
-Replace `<your-repository-url>` with the actual GitHub repository URL after uploading the project.
 
 ## Additional Commands
 
@@ -84,35 +59,3 @@ Run tests using Playwright UI mode:
 ```bash
 npm run test:ui
 ```
-
-## Browser Configuration
-
-This project is configured to run tests using the locally installed Google Chrome browser:
-
-```ts
-channel: 'chrome'
-```
-
-Therefore, Google Chrome must be installed before running the tests.
-
-Playwright Chromium download is not required for this project.
-
-## Test Coverage
-
-The automated suite covers:
-
-- Contact Us page loading
-- Required form fields visibility
-- Empty field validation
-- Invalid email validation
-- Short name, phone, and message validation
-- Phone field character filtering
-- Valid phone symbol handling
-- Validation error clearing
-- reCAPTCHA submission behavior
-
-## Note
-
-The Contact Us form contains Google reCAPTCHA. The script does not bypass reCAPTCHA. Instead, it verifies the expected behavior when the form is submitted without completing reCAPTCHA.
-
-One exploratory finding is documented in the test suite: the page contains duplicate `contact-form` IDs, which can affect form submission behavior.
