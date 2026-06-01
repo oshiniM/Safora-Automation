@@ -16,6 +16,8 @@ Before running the tests, make sure the following are installed:
 
 ### Steps
 
+Open Command Prompt terminal and run the commands below.
+
 1. Clone the repository:
 
 ```bash
@@ -57,5 +59,5 @@ npm run test:headed
 Run tests using Playwright UI mode:
 
 ```bash
-npm run test:ui
+npx playwright test --ui
 ```
