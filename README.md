@@ -1,4 +1,4 @@
-# Safora Contact Us Automation
+# Safora Contact Us Page Automation
 
 This project contains Playwright automation tests for the Safora Contact Us page:
 
